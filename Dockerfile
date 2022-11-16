@@ -10,7 +10,6 @@
 FROM docker.io/debian:11-slim AS stage-base
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG DOVECOT_COMMUNITY_REPO=0
 ARG LOG_LEVEL=trace
 
 SHELL ["/bin/bash", "-e", "-o", "pipefail", "-c"]
